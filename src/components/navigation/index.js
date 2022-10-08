@@ -28,6 +28,8 @@ const Navigation = () => {
           <NavLink
             to="/"
             className="nav-link"
+            activeClassName="nav-link-active"
+            exact
           >
             All Pets
           </NavLink>
@@ -40,6 +42,7 @@ const Navigation = () => {
                 to={`/${type._links.self.href.split('/').pop()}`}
                 key={type.name}
                 className="nav-link"
+                activeClassName="nav-link-active"
               >
                 {type.name}s
               </NavLink>{' '}
