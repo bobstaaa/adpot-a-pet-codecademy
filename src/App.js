@@ -11,6 +11,9 @@ function App() {
       <div>
         <Navigation />
         <Switch>
+          <Route path='/pet-details-not-found'>
+            <PetDetailsNotFound />
+          </Route>
           <Route path='/search'>
             <SearchPage />
           </Route>
@@ -20,7 +23,6 @@ function App() {
           <Route path='/:type?'>
             <HomePage />
           </Route>
-
         </Switch>
       </div>
     </Router>
